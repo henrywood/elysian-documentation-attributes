@@ -1,6 +1,6 @@
 <?php
 
-namespace Elysian\\DocumentationAttributes;
+namespace Elysian\DocumentationAttributes;
 
 use ReflectionMethod;
 use ReflectionFunction;
