@@ -11,6 +11,6 @@
     },
     "require": {
         "php": ">=8.2",
-        "nikic/php-parser": "^4.20"
+        "nikic/php-parser": "^4.20 || 4.x-dev"
     }
 }
