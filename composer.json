@@ -1,16 +1,16 @@
 {
-    "name": "elysian/documentation-attributes",
-    "description": "Elysian Platform FrankenPHP controller documentation attributes",
-    "type": "library",
-    "license": "MIT",
-    "version": "1.0.0",
-    "autoload": {
-        "psr-4": {
-            "Elysian\\DocumentationAttributes\\": "src/"
-        }
-    },
-    "require": {
-        "php": ">=8.2",
-        "nikic/php-parser": "^4.20 || 4.x-dev"
-    }
+	"name": "elysian/documentation-attributes",
+	"description": "Elysian Platform FrankenPHP controller documentation attributes",
+	"type": "library",
+	"license": "MIT",
+	"version": "1.1.0",
+	"autoload": {
+		"psr-4": {
+			"Elysian\\DocumentationAttributes\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=8.2",
+		"nikic/php-parser": "^4.20 || 4.x-dev"
+	}
 }
