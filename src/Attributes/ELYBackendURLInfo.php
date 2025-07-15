@@ -4,9 +4,11 @@ namespace Elysian\DocumentationAttributes\Attributes;
 
 use Elysian\DocumentationAttributes\Enums\HttpMethod;
 
-#[\Attribute(\Attribute::TARGET_METHOD | \Attribute::TARGET_FUNCTION)]
-class ELYBackendURLInfo
-{
+use Attribute;
+
+#[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_FUNCTION)]
+class ELYBackendURLInfo {
+
 	public function __construct(
 		public string $name,
 		public string $prename,
@@ -16,7 +18,7 @@ class ELYBackendURLInfo
 		public string $desc,
 		public HttpMethod $method = HttpMethod::GET,
 		public bool $sst = true,
-		public string $requiresAUth = "UNKNOWN"
+		public string $requiresAuth = "UNKNOWN"
 	) {}
 }
 
