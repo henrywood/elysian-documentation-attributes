@@ -1,26 +1,22 @@
 <?php
 
-namespace Elysian\\DocumentationAttributes\\Attributes;
+namespace Elysian\DocumentationAttributes\Attributes;
 
-enum HttpMethod: string {
-    case GET = 'GET';
-    case POST = 'POST';
-    case PUT = 'PUT';
-    case DELETE = 'DELETE';
-}
+use Elysian\DocumentationAttributes\Enums\HttpMethod;
 
 #[\Attribute(\Attribute::TARGET_METHOD | \Attribute::TARGET_FUNCTION)]
-class BackendURLInfo
+class ELYBackendURLInfo
 {
-    public function __construct(
-        public string $name,
-        public string $prename,
-        public string $url,
-        public string $docuser,
-        public bool $hmanaged,
-        public string $desc,
-        public HttpMethod $method = HttpMethod::GET,
-        public bool $sst = true,
-        public string $requiresAUth = "UNKNOWN"
-    ) {}
+	public function __construct(
+		public string $name,
+		public string $prename,
+		public string $url,
+		public string $docuser,
+		public bool $hmanaged,
+		public string $desc,
+		public HttpMethod $method = HttpMethod::GET,
+		public bool $sst = true,
+		public string $requiresAUth = "UNKNOWN"
+	) {}
 }
+

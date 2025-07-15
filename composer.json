@@ -3,7 +3,7 @@
 	"description": "Elysian Platform FrankenPHP controller documentation attributes",
 	"type": "library",
 	"license": "MIT",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"autoload": {
 		"psr-4": {
 			"Elysian\\DocumentationAttributes\\": "src/"
